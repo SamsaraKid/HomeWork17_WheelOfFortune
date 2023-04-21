@@ -1,0 +1,46 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    border: black dotted 1px;
+}
+
+#wrap{
+    height: 100vh;
+}
+
+#leftField, #rightField{
+    /*display: inline-block;*/
+    float: left;
+    height: 100%;
+}
+
+#leftField{
+    width: 60%;
+}
+
+#rightField{
+    width: 40%;
+}
+
+#questionWrap, #scoresWrap{
+    height: 15%;
+}
+
+#wordWrap{
+    height: 40%;
+}
+
+#gameWrap, #hostWrap{
+    height: 45%;
+}
+
+#prizesWrap, #giftsWrap{
+    height: 20%;
+}
