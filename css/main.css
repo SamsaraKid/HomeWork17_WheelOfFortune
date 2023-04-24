@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*оформление игрового поля*/
 body{
     padding: 0;
     margin: 0;
@@ -16,8 +17,8 @@ div{
 }
 
 #leftField, #rightField{
-    /*display: inline-block;*/
-    float: left;
+    display: inline-block;
+    /*float: left;*/
     height: 100%;
 }
 
@@ -34,13 +35,42 @@ div{
 }
 
 #wordWrap{
-    height: 40%;
+    height: 20%;
 }
 
-#gameWrap, #hostWrap{
+#gameWrap{
+    height: 65%;
+    position: relative;
+}
+
+#hostWrap{
     height: 45%;
 }
 
 #prizesWrap, #giftsWrap{
     height: 20%;
 }
+
+/*барабан*/
+#wheel{
+    height: 100%;
+    width: min-content;
+    margin: auto;
+}
+
+#wheel img{
+    height: 100%;
+}
+
+/*стрелка*/
+#arrow{
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    left: 75%;
+}
+
+
