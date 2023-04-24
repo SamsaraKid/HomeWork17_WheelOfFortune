@@ -25,3 +25,7 @@ function start() {
     $('#question').text(words[x].question)
     $('#word').text(secret.join(' '))
 }
+
+function guessLetter() {
+
+}
