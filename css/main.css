@@ -6,6 +6,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: mediumaquamarine;
 }
 
 div{
@@ -30,14 +31,14 @@ div{
 }
 
 #questionWrap, #scoresWrap{
-    height: 15%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #wordWrap{
-    height: 20%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,11 +51,12 @@ div{
 }
 
 #hostWrap{
-    height: 45%;
+    height: 40%;
+    position: relative;
 }
 
 #prizesWrap, #giftsWrap{
-    height: 20%;
+    height: 25%;
 }
 
 /*барабан*/
@@ -106,7 +108,116 @@ div{
 
 /*}*/
 
+/*призы*/
+#prizesWrap h2{
+    margin: 0;
+    text-align: center;
+}
+
+#prizes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+#prizes button{
+    width: 20%;
+    /*height: 50%;*/
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+#prizes img{
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.25s;
+}
+
+#prizes p{
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    padding: 3% 0;
+}
+
+#prizes img:hover{
+    transform: scale(1.5);
+
+}
 
 
 
+/*подарки*/
 
+#giftsWrap h2{
+    margin: 0;
+    text-align: center;
+}
+
+#gifts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+#gifts button{
+    width: 20%;
+    /*height: 50%;*/
+    background-color: unset;
+    border: none;
+}
+
+#gifts img{
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.25s;
+}
+
+#gifts p{
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    padding: 3% 0;
+}
+
+#gifts img:hover{
+    transform: scale(1.5);
+}
+
+
+/*ведущий*/
+#giftsOnHost{
+    position: relative;
+}
+
+#host{
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+
+
+#hatOnHost, #piculesOnHost, #glassesOnHost{
+    width: 20%;
+    position: absolute;
+}
+
+
+#hatOnHost {
+    top: -10%;
+    left: 47%;
+}
+
+#piculesOnHost{
+    top: 45%;
+    left: 15%;
+}
+
+#glassesOnHost{
+    top: 3%;
+    left: 49%;
+}

@@ -29,6 +29,8 @@ function start() {
     $('#question').text(words[questNum].question)
     $('#word').text(secret.join(' '))
     nextMove()
+    $('#hatOnHost, #piculesOnHost, #glassesOnHost, #prizes button, #prizesWrap h2')
+            .prop('hidden', true)
 }
 
 // крутим колесо
