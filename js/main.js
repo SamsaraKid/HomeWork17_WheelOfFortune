@@ -19,6 +19,7 @@ let moveScores = 0
 let errors = 0
 
 const giftPrice = [200, 400, 500]
+const prizePrice = [1000, 2000, 3000]
 
 $(document).ready(start)
 
@@ -141,8 +142,8 @@ function makeGift(number) {
 
 //забрать призы
 function getPrize(number) {
-    if (scores >= giftPrice[number]) {
-        scores -= giftPrice[number]
+    if (scores >= prizePrice[number]) {
+        scores -= prizePrice[number]
         $('#scores').text('У вас ' + scores + ' очков')
         switch (number) {
             case 0: $('#banana img, #banana p').prop('hidden', true);
