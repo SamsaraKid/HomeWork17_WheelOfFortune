@@ -7,11 +7,12 @@ body{
     padding: 0;
     margin: 0;
     background-color: mediumaquamarine;
+    text-align: center;
 }
 
-div{
-    border: black dotted 1px;
-}
+/*div{*/
+/*    border: black dotted 1px;*/
+/*}*/
 
 #wrap{
     height: 100vh;
@@ -72,6 +73,7 @@ div{
     width: 100%;
     border: none;
     background-color: unset;
+    cursor: pointer;
 }
 
 #wheelWrap img{
@@ -80,9 +82,13 @@ div{
 
 }
 
+#spin:disabled{
+    cursor: unset;
+}
+
 /*анимация барабана*/
 .spinWheel{
-    animation: spin 3s ease;
+    animation: spin 1.5s ease;
 }
 @keyframes spin {
     from{
@@ -143,7 +149,6 @@ div{
 
 #prizes img:hover{
     transform: scale(1.5);
-
 }
 
 
@@ -183,6 +188,7 @@ div{
 
 #gifts img:hover{
     transform: scale(1.5);
+    cursor: pointer;
 }
 
 
