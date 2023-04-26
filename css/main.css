@@ -8,6 +8,7 @@ body{
     margin: 0;
     background-color: mediumaquamarine;
     text-align: center;
+    font-family: sans-serif;
 }
 
 /*div{*/
@@ -66,6 +67,7 @@ body{
     /*width: min-content;*/
     width: 50%;
     margin: auto;
+    position: relative;
 }
 
 #spin{
@@ -76,7 +78,7 @@ body{
     cursor: pointer;
 }
 
-#wheelWrap img{
+#spin img{
     /*height: 100%;*/
     width: 100%;
 
@@ -105,14 +107,12 @@ body{
 /*}*/
 
 /*стрелка*/
-/*#arrow{*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-top: 25px solid transparent;*/
-/*    border-right: 50px solid red;*/
-/*    border-bottom: 25px solid transparent;*/
-
-/*}*/
+#arrow{
+    width: 20%;
+    position: absolute;
+    left: 97%;
+    top: 42%;
+}
 
 /*призы*/
 #prizesWrap h2{

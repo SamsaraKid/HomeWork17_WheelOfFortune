@@ -38,12 +38,13 @@ function start() {
 }
 
 // крутим колесо
+// wheelWrap img
 function spinWheel() {
-    if ($('#wheelWrap img').classList !== 'spinWheel') {
-        $('#wheelWrap img').addClass('spinWheel')
+    if ($('#spin').classList !== 'spinWheel') {
+        $('#spin').addClass('spinWheel')
     }
     setTimeout(function (){
-        $('#wheelWrap img').removeClass('spinWheel')
+        $('#spin').removeClass('spinWheel')
         moveScores = Math.floor(Math.random()*15+1)*50
         makeGuess()
     },1500)
