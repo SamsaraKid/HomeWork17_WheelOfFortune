@@ -18,6 +18,11 @@ let scores = 0
 let moveScores = 0
 let errors = 0
 
+let currentSector = 0
+let currentDeg = 0
+
+const sectors = [0,300,100,750,800,150,850,350,900,450,500,100,250,50,950,100]
+
 const giftPrice = [200, 400, 500]
 const prizePrice = [1000, 2000, 3000]
 
@@ -40,14 +45,30 @@ function start() {
 // крутим колесо
 // wheelWrap img
 function spinWheel() {
+    let randSector = Math.floor(Math.random()*16+1)
+    currentSector += randSector
+    console.log(currentSector)
+    if (currentSector > 16) {
+        currentSector = currentSector % 16
+    }
+    console.log(currentSector)
+    let randDeg = randSector*22.5
+    currentDeg += randDeg
+    console.log(currentDeg, randDeg)
     if ($('#spin').classList !== 'spinWheel') {
+
+        document.documentElement.style.setProperty('--spinDeg', randDeg + 'deg');
+        // document.documentElement.style.setProperty('--currentDeg', randDeg);
         $('#spin').addClass('spinWheel')
     }
     setTimeout(function (){
         $('#spin').removeClass('spinWheel')
-        moveScores = Math.floor(Math.random()*15+1)*50
+        // moveScores = Math.floor(Math.random()*15+1)*50
+        moveScores = sectors[currentSector-1]
+        document.documentElement.style.setProperty('--currentDeg', currentDeg + 'deg');
+        // console.log(randSector, randDeg)
         makeGuess()
-    },1500)
+    },1400)
 }
 
 // угадываем букву
