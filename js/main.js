@@ -57,7 +57,7 @@ function spinWheel() {
     console.log(currentDeg, randDeg)
     if ($('#spin').classList !== 'spinWheel') {
 
-        document.documentElement.style.setProperty('--spinDeg', randDeg + 'deg');
+        document.documentElement.style.setProperty('--spinDeg', randDeg+360 + 'deg');
         // document.documentElement.style.setProperty('--currentDeg', randDeg);
         $('#spin').addClass('spinWheel')
     }
